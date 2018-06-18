@@ -48,6 +48,8 @@ public interface Opcodes {
   int ASM6 = 6 << 16 | 0 << 8;
   int ASM7 = 7 << 16 | 0 << 8;
 
+  int API_VERSION = ASM7; //[JB: convenience constant]
+
   /*
    * Internal flags used to redirect calls to deprecated methods. For instance, if a visitOldStuff
    * method in API_OLD is deprecated and replaced with visitNewStuff in API_NEW, then the
