@@ -3277,7 +3277,8 @@ public class ClassReader {
       }
       currentAttributeOffset += attributeLength;
     }
-    throw new IllegalArgumentException();
+    //[JB] accepts incomplete class headers (temp. fix, needed for IJ debugger)
+    return null;
   }
 
   /**
