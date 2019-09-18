@@ -92,6 +92,7 @@ final class Subroutine {
         localsUsed[i] = true;
         changed = true;
       }
+      continue;
     }
     if (subroutine.start == start) {
       for (int i = 0; i < subroutine.callers.size(); ++i) {
