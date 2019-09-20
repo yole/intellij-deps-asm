@@ -87,6 +87,7 @@ public abstract class AnnotationVisitor {
     if (av != null) {
       av.visit(name, value);
     }
+    return;
   }
 
   /**
